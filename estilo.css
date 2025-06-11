@@ -184,60 +184,57 @@ body {
     width: 100%;
     height: 85vh;
     background-image: url(imagens/cafeteria.jpg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .secao-horarios h2 {
     font-family: 'Lato', serif;
     color: #fff;
-    position: absolute;
-    top: 20%;
-    right: 0px;
-    left: 0px;
-    text-align: center;
-}
-
-.secao-horarios h3 {
-    font-family: 'Lato', serif;
-    color: #fff;
+    margin: 100px 0;
 }
 
 .lista {
-    position: absolute;
-    width: 768px;
-    margin: 0px auto;
-    list-style: none;
-    bottom: 20%;
-    right: 0px;
-    left: 0px;
+    width: 100%;
+    max-width: 768px;
 }
 
 .lista li {
-    position: relative;
-    line-height: 30px;
+    list-style: none;
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista li h3 {
+    font-family: 'Lato', serif;
+    color: #fff;
+    flex: 0 1 80px;
 }
 
 .lista li div {
-    width: 60%;
     height: 1px;
     background-color: #acacac;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 50%;
-    margin: 0px auto;
+    flex: 1 1 auto;
 }
 
-.lista li p {
+.lista li p, span {
     font-family: 'Lato', serif;
-    position: absolute;
-    top: 0;
-    right: 0;
     color: #acacac;
+    flex: 0 1 100px;
+    text-align: right;
 }
 
 .lista span, .rodape span {
     color: #c4a47c;
 }
+
+/* seção rodapé */
+/*--------------*/
 
 .rodape {
     font-family: 'Lato', serif;
